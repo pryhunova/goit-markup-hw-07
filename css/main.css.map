@@ -12,7 +12,7 @@
         "../scss/components/_header.scss",
         "../scss/components/_footer.scss",
         "../scss/pages/studio/_hero.scss",
-        "../scss/pages/studio/_modal.scss",
+        "../scss/components/_modal.scss",
         "../scss/pages/studio/_features.scss",
         "../scss/pages/studio/_activity.scss",
         "../scss/pages/studio/_clients.scss",
