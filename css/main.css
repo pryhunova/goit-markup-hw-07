@@ -364,6 +364,12 @@ p {
   background-color: #2f303a;
 }
 
+.footer .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,12 +379,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.footer .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /*logo*/
@@ -406,10 +406,6 @@ p {
   margin-bottom: 9px;
 }
 
-.address-footer .mail {
-  margin-bottom: 9px;
-}
-
 /*контейнер social-list */
 .social-list {
   padding-top: 72px;
@@ -419,6 +415,15 @@ p {
 /*контейнер подписки */
 .newsletter-list {
   padding-top: 72px;
+}
+
+.newsletter-list .button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-left: 10px;
+  background-image: url("../images/icons/icon-send.svg");
 }
 
 .newsletter-container {
@@ -431,15 +436,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.newsletter-list .button::after {
-  content: '';
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-  margin-left: 10px;
-  background-image: url("../images/icons/icon-send.svg");
 }
 
 .newsletter-button {
@@ -484,6 +480,10 @@ p {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.address-footer .mail {
+  margin-bottom: 9px;
 }
 
 .address-footer .contacts-footer {

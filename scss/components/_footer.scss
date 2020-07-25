@@ -1,16 +1,16 @@
 /* секция футер */
 .footer {
   background-color: $fotter-background-color;
-}
-.footer .container {
-  display: flex;
-  height: 252px;
-  max-width: 1600px;
-  justify-content: center;
-}
 
-.footer .button {
-  display: flex;
+  .button {
+    display: flex;
+  }
+  .container {
+    display: flex;
+    height: 252px;
+    max-width: 1600px;
+    justify-content: center;
+  }
 }
 
 /*logo*/
@@ -36,9 +36,7 @@
 .location {
   margin-bottom: 9px;
 }
-.address-footer .mail {
-  margin-bottom: 9px;
-}
+
 /*контейнер social-list */
 .social-list {
   padding-top: 72px;
@@ -48,6 +46,15 @@
 /*контейнер подписки */
 .newsletter-list {
   padding-top: 72px;
+
+  .button::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    margin-left: 10px;
+    background-image: url('../images/icons/icon-send.svg');
+  }
 }
 .newsletter-container {
   display: flex;
@@ -55,14 +62,6 @@
   align-items: center;
 }
 
-.newsletter-list .button::after {
-  content: '';
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-  margin-left: 10px;
-  background-image: url('../images/icons/icon-send.svg');
-}
 .newsletter-button {
   border: transparent;
   outline: none;
@@ -98,10 +97,14 @@
   letter-spacing: 0.03em;
   color: $hero-white-color;
 
+  .mail {
+    margin-bottom: 9px;
+  }
   .contacts-footer {
     color: rgba(255, 255, 255, 0.6);
   }
 }
+
 /* футер соцсети */
 .label {
   display: flex;
