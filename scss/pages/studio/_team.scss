@@ -1,18 +1,13 @@
 /* секция команда */
 
 .section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %padding-tb;
   background-color: $section-background-color;
 
   .team-title {
     margin-bottom: 50px;
 
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.03em;
+    @extend %font-big;
     text-align: center;
   }
 }
@@ -67,12 +62,9 @@
 }
 
 .team-icons a {
-  display: flex;
+  @extend %flex-center;
   padding: 12px;
   transition: background-color $duration $function;
-
-  justify-content: center;
-  align-items: center;
   border-radius: 50px;
 
   &:hover,

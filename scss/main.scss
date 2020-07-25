@@ -1,4 +1,5 @@
 @import './utils/variables';
+@import './utils/placeholder';
 @import './base/normalize';
 @import './base/body';
 @import './base/conteiner';
@@ -6,8 +7,8 @@
 @import './components/logo';
 @import './components/header';
 @import './components/footer';
-@import './pages/studio/hero';
 @import './components/modal';
+@import './pages/studio/hero';
 @import './pages/studio/features';
 @import './pages/studio/activity';
 @import './pages/studio/clients';

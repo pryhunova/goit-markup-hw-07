@@ -3,11 +3,7 @@
   padding-bottom: 94px;
 
   .activity-title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.03em;
+    @extend %font-big;
     text-align: center;
     margin-bottom: 50px;
   }
@@ -19,11 +15,10 @@
     width: 100%;
     padding: 27px 0 27px 0;
 
+    @extend %font-small;
     color: $hero-white-color;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;

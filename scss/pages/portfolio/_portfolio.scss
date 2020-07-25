@@ -5,8 +5,7 @@
 }
 /* секция портфолио */
 .portfolio-gallery .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %padding-tb;
 }
 /* скрытый заголовок портфолио */
 .portfolio-title-hidden {
